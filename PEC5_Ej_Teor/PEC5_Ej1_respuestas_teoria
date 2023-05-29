@@ -1,0 +1,33 @@
+1. ¿Cuáles son las principales diferencias entre formularios dirigidos por template y formularios reactivos?
+
+En Angular, hay dos enfoques principales para construir formularios: formularios dirigidos por template y formularios reactivos.
+
+-Formularios dirigidos por template: La estructura y lógica del formulario se definen principalmente en el HTML utilizando directivas como ngModel para el enlace de datos. La validación se realiza en el HTML mediante atributos especiales. Son más simples y rápidos de implementar, adecuados para formularios más simples y rápidos de crear.
+
+-Formularios reactivos: La estructura y lógica del formulario se definen en el código TypeScript utilizando clases como FormGroup, FormControl y FormArray para representar los controles del formulario. El enlace de datos se realiza en el código TypeScript, lo que permite un mayor control y flexibilidad. La validación se define programáticamente en el código TypeScript. Son más escalables y mantenibles, adecuados para formularios complejos con requisitos avanzados de validación y manipulación de datos.
+
+La elección entre ambos enfoques depende de la complejidad del formulario y los requisitos específicos del proyecto. Los formularios dirigidos por template son más simples y rápidos de implementar, mientras que los formularios reactivos brindan un mayor control y escalabilidad.
+
+2. ¿Qué son, para qué sirven y cómo se utilizan las directivas ngModel y ngModelChange?
+
+La directiva ngModel se utiliza para establecer una conexión bidireccional entre un control del formulario en el HTML y una propiedad en el componente. Permite enlazar los valores del control del formulario con la propiedad del componente, lo que significa que los cambios realizados en el control se reflejarán automáticamente en la propiedad y viceversa. Esto permite mantener sincronizados los datos entre el formulario y el componente.
+
+Por otro lado, la directiva ngModelChange se utiliza para capturar el evento de cambio de valor en un control del formulario enlazado con ngModel. Permite ejecutar una acción o función en el componente cuando ocurre un cambio en el valor del control.
+
+3. ¿Qué son, cuáles son y para qué sirven los estados en los formularios dirigidos por templates?
+
+En los formularios dirigidos por templates en Angular, los estados se refieren a los diferentes estados en los que puede encontrarse un control del formulario. Estos estados son proporcionados por la directiva ngModel y son útiles para realizar validaciones, obtener información sobre la validez del control y mostrar retroalimentación visual al usuario.
+
+Existen varios estados predefinidos en los formularios dirigidos por templates:
+
+-pristine: Indica que el control no ha sido modificado por el usuario. Es el estado inicial de un control.
+-dirty: Indica que el valor del control ha sido modificado por el usuario.
+-touched: Indica que el usuario ha interactuado con el control, es decir, ha enfocado y desenfocado el control.
+-untouched: Indica que el usuario no ha interactuado con el control.
+-valid: Indica que el valor del control cumple con todas las validaciones definidas.
+-invalid: Indica que el valor del control no cumple con alguna o todas las validaciones definidas.
+-pending: Indica que el control está en proceso de validación asincrónica y se encuentra en espera de un resultado.
+
+Estos estados se actualizan automáticamente a medida que el usuario interactúa con el formulario y se realizan las validaciones definidas.
+
+4. ¿Qué ventajas aportan los FormGroup en la composición de formularios?

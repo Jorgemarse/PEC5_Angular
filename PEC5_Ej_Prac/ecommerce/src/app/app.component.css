@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container h2{
+    text-align: center;
+}
+
+/* Clases del componente */
+
+/* .senaker-img {
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 0 10px 10px rgba(228, 12, 12, 0.2);
+    margin:15px;
+}
+.senaker-img.available {
+    box-shadow: 0 0 10px 10px rgba(130, 201, 17, 0.63);
+}
+
+.senaker-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+}
+h2{
+    text-align: center;
+    background-color: rgba(255, 228, 196, 0.521);
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+.sneaker-container.available {
+    background-color: #b2f1b533;
+}
+
+.sneaker-container.out {
+    background-color: #dd1e1e33;
+}
+
+.senaker-price.out {
+    color: gray;
+}
+
+.senaker-price {
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.senaker-quantity span {
+    padding: 0 10px;
+    font-size: 1.4em;
+} */
